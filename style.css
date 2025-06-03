@@ -1,0 +1,25 @@
+ul {
+  list-style-type: none;
+}
+
+li { width: 150px;
+    height: 150px;
+
+}
+
+li:nth-child(1) {
+    background-color: red;
+}
+
+
+li:nth-child(1) {
+    background-color:yellow;
+}
+
+
+li:nth-child(1) {
+    background-color: green;
+}
+
+
+
