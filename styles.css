@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: blueviolet;
+    padding: 50px;    
+    display: flex;
+    position: relative;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+
+}   
+
+.box {
+    background-color: azure;
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circle {
+    background-color: aquamarine;
+    border-radius: 40%;
+    border-color: aquamarine;
+    display: flex;
+    position: absolute;
+    top: -20px;    /* riferito all'altezza */
+    right: -20px;  /* riferito alla larghezza */
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 900px) {
+  /* 
+     Queste regole si applicano quando la larghezza dello schermo è al massimo di 900px,
+     quindi su tablet e schermi piccoli.
+  */
+  .container {
+    flex-direction: column; /* Dispone i box in colonna invece che in riga */
+    padding: 20px;          /* Riduce il padding per risparmiare spazio */
+    height: auto;           /* L'altezza si adatta al contenuto */
+  }
+  .box {
+    width: 100%;            /* Ogni box occupa tutta la larghezza disponibile */
+    min-width: 200px;       /* Impedisce che i box diventino troppo stretti */
+    height: 100px;          /* Riduce l'altezza dei box */
+    margin-bottom: 20px;    /* Spazio tra un box e l'altro */
+  }
+  .circle {
+    width: 24px;            /* Riduce la dimensione del cerchio */
+    height: 24px;
+    top: -12px;             /* Sposta il cerchio in alto, metà della sua altezza */
+    right: -12px;           /* Sposta il cerchio a destra, metà della sua larghezza */
+  }
+}
+
+@media (max-width: 500px) {
+  /* 
+     Queste regole si applicano quando la larghezza dello schermo è al massimo di 500px,
+     quindi su smartphone e dispositivi molto piccoli.
+  */
+  .container {
+    padding: 10px;          /* Riduce ulteriormente il padding */
+  }
+  .box {
+    min-width: 120px;       /* Permette ai box di diventare ancora più stretti */
+    height: 80px;           /* Riduce ancora l'altezza dei box */
+  }
+  .circle {
+    width: 18px;            /* Riduce ancora la dimensione del cerchio */
+    height: 18px;
+    top: -9px;              /* Sposta il cerchio in alto, metà della sua altezza */
+    right: -9px;            /* Sposta il cerchio a destra, metà della sua larghezza */
+  }
+}
+
