@@ -63,6 +63,7 @@
     height: 24px;
     top: -12px;             /* Sposta il cerchio in alto, metà della sua altezza */
     right: -12px;           /* Sposta il cerchio a destra, metà della sua larghezza */
+    
   }
 }
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <!--
+      JavaScript è un linguaggio di programmazione dinamico, interpretato dal browser.
+      Può gestire diversi tipi di dato principali:
+        - Number: numeri interi o decimali (es: 10, 3.14)
+        - String: sequenze di caratteri tra virgolette (es: "ciao", 'testo')
+        - Boolean: valori vero/falso (true, false)
+        - Object: collezioni di coppie chiave/valore (es: {nome: "Mario"})
+        - Array: liste ordinate di valori (es: [1, 2, 3])
+        - Null: valore nullo intenzionale
+        - Undefined: valore non assegnato
+      JavaScript è tipizzato dinamicamente: il tipo di una variabile può cambiare durante l’esecuzione.
+      Le operazioni (+, -, *, /) si comportano in modo diverso a seconda dei tipi di dato:
+        - Se usi + tra numeri, fa la somma.
+        - Se usi + tra stringhe, le concatena.
+        - Se usi + tra stringa e numero, converte tutto in stringa e concatena.
+      Puoi vedere i risultati e i messaggi usando console.log().
+    -->
+    <!--
+      Questo script JavaScript viene eseguito quando la pagina viene caricata.
+      Serve per mostrare come dichiarare variabili e stampare messaggi nella console.
+    
+       // OPERATORI ARITMETICI IN JAVASCRIPT:
+        +   // somma (es: 5 + 3 = 8)
+        -   // sottrazione (es: 5 - 3 = 2)
+        *   // moltiplicazione (es: 5 * 3 = 15)
+        /   // divisione (es: 6 / 2 = 3)
+        %   // modulo: resto della divisione (es: 7 % 3 = 1)
+        **  // esponenziazione (es: 2 ** 3 = 8)
+        
+        // OPERATORI DI COMPARAZIONE IN JAVASCRIPT:
+// Servono per confrontare valori e restituiscono un valore booleano (true o false).
+
+// ==   // uguale (converte i tipi se diversi, es: "5" == 5 è true)
+// ===  // strettamente uguale (confronta anche il tipo, es: "5" === 5 è false)
+// !=   // diverso (converte i tipi se diversi, es: "5" != 5 è false)
+// !==  // strettamente diverso (confronta anche il tipo, es: "5" !== 5 è true)
+// >    // maggiore (es: 7 > 3 è true)
+// <    // minore (es: 2 < 5 è true)
+// >=   // maggiore o uguale (es: 5 >= 5 è true)
+// <=   // minore o uguale (es: 3 <= 4 è true)-->
+    <script>
+      // Stampa "Hello, world!" nella console del browser
+      console.log("Hello, world!");
+
+      // Dichiara tre variabili: nome, cognome ed età
+      let nome = "Francesco";
+      let cognome = "Lucidi";
+      let eta = 28; // età è un numero, ma potrebbe essere anche una stringa
+      let x = 10;
+      let y = "10";
+
+      // Stampa nella console il nome e il cognome separati da uno spazio
+      console.log(nome + " " + cognome);
+
+      console.log("l'utente loggato è", nome + cognome);
+      console.log("fra 10 anni avrai", eta + 10);
+      console.log(typeof eta); //stampa il tipo di dato riferito alla variabile che scrivi
+      console.log(x == y);
+      console.log(x === y);
+      if (x >= 18) {
+        console.log("esame superato");
+      } else if (x < 18) {
+        console.log("esame non superato");
+      }
+
+      // Il costrutto if...else if...else serve per eseguire blocchi di codice diversi in base a una o più condizioni.
+    </script>
+  </body>
+</html>

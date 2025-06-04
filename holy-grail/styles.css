@@ -1,0 +1,98 @@
+/* ========== IMPOSTAZIONI BASE ========== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  height: 100vh;
+}
+
+/* ========== HEADER E FOOTER ========== */
+
+header,
+footer {
+  background-color: #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ========== MENU DI NAVIGAZIONE ========== */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* ========== STRUTTURA PRINCIPALE ========== */
+
+/*
+Usiamo Flexbox per posizionare:
+- .left a sinistra
+- .container al centro
+- .right a destra
+*/
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* ========== SIDEBAR SINISTRA ========== */
+.left {
+  width: 200px;
+  background-color: #66c977;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* ========== CONTENUTO CENTRALE ========== */
+.container {
+  flex: 1; /* Occupa tutto lo spazio disponibile */
+  background-color: #e79191;
+  padding: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+}
+
+/* ========== SIDEBAR DESTRA ========== */
+.right {
+  width: 200px;
+  background-color: #66c977;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    align-items: stretch; /* Allunga ogni elemento per tutta la larghezza */
+  }
+  .left,
+  .right,
+  .container {
+    width: 100%; /* Ogni elemento occupa tutta la larghezza */
+    margin-bottom: 1rem; /* Spazio tra gli elementi */
+  }
+}
+
+/*sistema left e side affiancate sotto il main in tablet*/
