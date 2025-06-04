@@ -71,7 +71,51 @@
         console.log("esame non superato");
       }
 
+      if (eta < 18) {
+        console.log("minorenne");
+      } else if (eta > 18) {
+        console.log("maggiorenne");
+      } else {
+        console.log("inserisci eta");
+      }
+
+      // if () {}...else () {} vale a dire SE qualcosa ALLORA qualcos'altro, ALTRIMENTI...
       // Il costrutto if...else if...else serve per eseguire blocchi di codice diversi in base a una o più condizioni.
+
+      // I cicli (loop) in JavaScript servono per eseguire ripetutamente un blocco di codice finché una condizione è vera.
+      // Il ciclo più comune è il for:
+      // Sintassi:
+      // for (inizializzazione; condizione; incremento) {
+      //   // codice da eseguire ad ogni iterazione
+      // }
+
+      // Esempio: stampa i numeri da 1 a 5
+      //for (let i = 1; i <= 5; i+1) {
+      // console.log(i); // stampa 1, poi 2, poi 3, poi 4, poi 5}
+
+      // Altri tipi di ciclo sono:
+      // while (condizione) { ... }    // Esegue il blocco finché la condizione è vera
+      // do { ... } while (condizione) // Esegue almeno una volta, poi continua se la condizione è vera
+      for (let i = 1; i <= 5; i++) {
+        console.log("Numero", i);
+      }
+
+      for (let i = 1; i < 10; i++) {
+        let quadrato = i * i;
+
+        console.log("quadrato di " + i + " è " + quadrato);
+      }
+      // Questo ciclo for calcola e stampa il quadrato dei numeri da 1 a 9.
+      // Spiegazione dettagliata:
+      // Inizializza i a 1; continua finché i è minore di 10; incrementa i di 1 ad ogni iterazione
+      // Calcola il quadrato del valore corrente di i e lo assegna alla variabile quadrato
+      // Stampa una stringa che mostra il numero e il suo quadrato
+      // Risultato in console:
+      // quadrato di 1 è 1
+      // quadrato di 2 è 4
+      // quadrato di 3 è 9
+      // ...
+      // quadrato di 9 è 81
     </script>
   </body>
 </html>
